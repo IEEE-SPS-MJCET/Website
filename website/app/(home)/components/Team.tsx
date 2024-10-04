@@ -13,36 +13,30 @@ export const projects = [
     title: "Asma Khanam",
     description:
       "Chairperson of IEEE SPS Club",
-    link: "https://stripe.com",
   },
   {
     title: "Mohd Ikram Hyderi ",
     description:
       "Vice-Chairperson of IEEE SPS Club",
-    link: "https://netflix.com",
   },
   {
     title: "Ahmer hyder",
     description:
       "General Secretary of IEEE SPS Club",
-    link: "https://google.com",
   },
   {
     title: "P Mahaboob Sana",
     description:
       "Joint Secretary of IEEE SPS Club",
-    link: "https://meta.com",
   },
   {
     title: "Akheel",
     description:
       "Treasurer of IEEE SPS Club",
-    link: "https://amazon.com",
   },
   {
     title: "Syed Tajuddin",
     description:
       "Human Resource of IEEE SPS Club",
-    link: "https://microsoft.com",
   },
 ];
