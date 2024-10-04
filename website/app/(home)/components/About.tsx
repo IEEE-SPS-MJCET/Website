@@ -2,7 +2,7 @@ export default function About() {
   return (
     <div className='flex flex-row items-center lg:flex-col justify-between min-h-[50vh] lg:pt-36 pt-28'>
         <div className='space-y-10'>
-        <h1 className='text-3xl lg:text-4xl font-bold text-lime-300 text-center'>About Us</h1>
+        <h1 className='text-3xl lg:text-4xl font-bold text-lime-300 text-center'>About Us🕵️</h1>
 
         <p className='md:w-94 text-sm lg:text-xl text-justify text-gray-300'>
         {"Welcome to IEEE SPS! We explore all aspects of "}
