@@ -33,10 +33,5 @@ export const projects = [
     title: "Akheel",
     description:
       "Treasurer of IEEE SPS Club",
-  },
-  {
-    title: "Syed Tajuddin",
-    description:
-      "Human Resource of IEEE SPS Club",
-  },
+  }
 ];

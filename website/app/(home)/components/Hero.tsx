@@ -394,8 +394,59 @@ export function Hero() {
     },
   ];
 
+  // return (
+  //   <div className="flex flex-row lg:pt-7 pt-3 py-20 items-center justify-center h-[55vh] md:h-auto dark:gradient-bg relative w-full">
+  //     <div className="max-w-7xl mx-auto w-full relative overflow-hidden lg:h-full md:h-[40rem] px-4">
+  //       <motion.div
+  //         initial={{
+  //           opacity: 0,
+  //           y: 20,
+  //         }}
+  //         animate={{
+  //           opacity: 1,
+  //           y: 0,
+  //         }}
+  //         transition={{
+  //           duration: 1,
+  //         }}
+  //         className="div"
+  //       >
+  //         <h2 className="text-center text-base md:text-5xl font-bold text-black dark:text-white pt-9">
+  //           We are<span className="text-lime-300"> IEEE Signal Processing Society</span>
+  //         </h2>
+  //         <p className="text-center text-xs lg:text-lg md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-lg mt-2 mx-auto">
+  //           of Muffakham Jah College of Engineering & Technology
+  //         </p>
+  //       </motion.div>
+  //       <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:gradient-bg z-40" />
+  //       <div className="absolute w-full lg:-bottom-20 -bottom-6 lg:h-72 md:h-full z-10">
+  //         <World data={sampleArcs} globeConfig={globeConfig} />
+  //       </div>
+  //     </div>
+
+      // <style jsx>{`
+      //   .gradient-bg {
+      //     background: linear-gradient(90deg, #161f16, #00172D, #014122);
+      //     background-size: 200% 200%;
+      //     animation: gradient-flow 15s ease infinite;
+      //   }
+
+      //   @keyframes gradient-flow {
+      //     0% {
+      //       background-position: 0% 50%;
+      //     }
+      //     50% {
+      //       background-position: 100% 50%;
+      //     }
+      //     100% {
+      //       background-position: 0% 50%;
+      //     }
+      //   }
+      //       `}</style>
+  //   </div>
+  // );
   return (
-    <div className="flex flex-row pt-7 items-center justify-center h-[55vh] md:h-auto dark:bg-black bg-white relative w-full">
+    <div className="flex flex-row items-center justify-center pt-6 pb-32 h-[78vh] md:h-auto dark:gradient-bg relative w-full">
       <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem] px-4">
         <motion.div
           initial={{
@@ -412,17 +463,36 @@ export function Hero() {
           className="div"
         >
           <h2 className="text-center text-base md:text-5xl font-bold text-black dark:text-white pt-9">
-            We are<span className="text-lime-300"> IEEE Signal Processing Society</span>
+          We are<span className="text-lime-300"> IEEE Signal Processing Society</span>
           </h2>
-          <p className="text-center text-xs lg:text-lg md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-lg mt-2 mx-auto">
-            of Muffakham Jah College of Engineering & Technology
+          <p className="text-center text-xs lg:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-lg mt-2 mx-auto">
+          Muffakham Jah College of Engineering & Technology
           </p>
         </motion.div>
-        <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
-        <div className="absolute w-full -bottom-20 h-72 md:h-full z-10">
+        <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:gradient-bg z-40" />
+        <div className="absolute w-full -bottom-1 lg:-bottom-20  h-72 md:h-full z-10">
           <World data={sampleArcs} globeConfig={globeConfig} />
         </div>
       </div>
+      <style jsx>{`
+        .gradient-bg {
+          background: linear-gradient(90deg, #161f16, #00172D, #014122);
+          background-size: 200% 200%;
+          animation: gradient-flow 15s ease infinite;
+        }
+
+        @keyframes gradient-flow {
+          0% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+          100% {
+            background-position: 0% 50%;
+          }
+        }
+            `}</style>
     </div>
   );
 }

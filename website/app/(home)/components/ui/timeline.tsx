@@ -34,7 +34,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   return (
     <div
-      className="w-full bg-white dark:bg-black font-sans md:px-10"
+      className="w-full dark:gradient-bg font-sans md:px-10"
       ref={containerRef}
     >
       <div className="max-w-7xl mx-auto pt-8 lg:pt-14 px-4 md:px-8 lg:px-10">
@@ -53,16 +53,59 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             className="flex justify-start pt-1 md:pt-9 md:gap-10"
           >
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
-              <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center">
-                <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" />
+              <div className="h-6 absolute left-5 top-1 lg:h-8 lg:w-8 lg:top-2 lg:left-5 md:left-3 w-6 rounded-full bg-white dark:bg-black flex items-center justify-center">
+                <div className="h-2 w-2 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-1" />
               </div>
-              <h3 className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-neutral-500 dark:text-cyan-300 ">
+              <h3 className="hidden md:block text-2xl md:pl-20 md:text-5xl font-bold gradient-text lg:pb-2">
                 {item.title}
               </h3>
             </div>
 
+            <style jsx>{`
+              .gradient-text {
+                background: linear-gradient(90deg, #00FF00, #3575ff, #00FF00);
+                background-size: 200% 200%; /* Makes the gradient move */
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent; /* Makes the gradient visible */
+                animation: gradient-flow 3s ease-in-out infinite;
+              }
+
+              @keyframes gradient-flow {
+                0% {
+                  background-position: 0% 50%;
+                }
+                50% {
+                  background-position: 100% 50%;
+                }
+                100% {
+                  background-position: 0% 50%;
+                }
+              }
+            `}</style>
+
+        <style jsx>{`
+        .gradient-bg {
+          background: linear-gradient(90deg, #161f16, #00172D, #014122);
+          background-size: 200% 200%;
+          animation: gradient-flow 15s ease infinite;
+        }
+
+        @keyframes gradient-flow {
+          0% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+          100% {
+            background-position: 0% 50%;
+          }
+        }
+            `}</style>
+
             <div className="relative pl-20 pr-4 md:pl-4 w-full">
-              <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-neutral-500 dark:text-neutral-500">
+              <h3 className="md:hidden block text-2xl mb-4 text-left font-bold gradient-text dark:text-neutral-500">
                 {item.title}
               </h3>
               {item.content}{" "}
